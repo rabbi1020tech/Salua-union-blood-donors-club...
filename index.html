@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- হেডার -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব লোগো">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                <li><a href="#donors">রক্তদাতা খুঁজুন</a></li>
+                <li><a href="#request">রক্তের আবেদন</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- হিরো সেকশন -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব</h1>
+            <p>রক্ত দিন, জীবন বাঁচান।</p>
+            <a href="#donors" class="cta-button">রক্তদাতা হোন</a>
+        </div>
+    </section>
+
+    <!-- আমাদের সম্পর্কে -->
+    <section id="about" class="about">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব একটি স্বেচ্ছাসেবী সংগঠন যা রক্তদানের মাধ্যমে জীবন বাঁচানোর লক্ষ্যে কাজ করে। আমাদের মিশন হল সম্প্রদায়ের মধ্যে রক্তদানের গুরুত্ব সম্পর্কে সচেতনতা বৃদ্ধি করা এবং প্রয়োজনে রক্তের যোগান নিশ্চিত করা।</p>
+    </section>
+
+    <!-- রক্তদাতা খুঁজুন -->
+    <section id="donors" class="donors">
+        <h2>রক্তদাতা খুঁজুন</h2>
+        <form id="searchForm">
+            <label for="bloodType">রক্তের গ্রুপ:</label>
+            <select id="bloodType" name="bloodType" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="location">লোকেশন:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">খুঁজুন</button>
+        </form>
+
+        <div id="results" class="results"></div>
+    </section>
+
+    <!-- রক্তের আবেদন -->
+    <section id="request" class="request">
+        <h2>রক্তের আবেদন</h2>
+        <form id="requestForm">
+            <label for="patientName">রোগীর নাম:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="bloodType">রক্তের গ্রুপ:</label>
+            <select id="bloodType" name="bloodType" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="location">লোকেশন:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="urgency">জরুরিতা:</label>
+            <select id="urgency" name="urgency" required>
+                <option value="Low">কম</option>
+                <option value="Medium">মধ্যম</option>
+                <option value="High">অতি জরুরি</option>
+            </select>
+
+            <button type="submit">আবেদন করুন</button>
+        </form>
+    </section>
+
+    <!-- যোগাযোগ -->
+    <section id="contact" class="contact">
+        <h2>যোগাযোগ</h2>
+        <p>ইমেইল: info@saluaunionbloodclub.com</p>
+        <p>ফোন: ০১২৩-৪৫৬৭৮৯</p>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; ২০২৩ সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
