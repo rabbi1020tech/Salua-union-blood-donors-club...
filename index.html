@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ডার্ক মোড স্টাইল */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        body.dark-mode header {
+            background-color: #222;
+        }
+        body.dark-mode section {
+            background-color: #444;
+        }
+    </style>
 </head>
 <body>
     <!-- হেডার -->
@@ -18,9 +31,14 @@
                 <li><a href="#about">আমাদের সম্পর্কে</a></li>
                 <li><a href="#donors">রক্তদাতা খুঁজুন</a></li>
                 <li><a href="#request">রক্তের আবেদন</a></li>
+                <li><a href="#donor-profiles">ডোনার প্রোফাইল</a></li>
+                <li><a href="#events">ইভেন্ট</a></li>
+                <li><a href="#blog">ব্লগ</a></li>
+                <li><a href="#donation">ডোনেশন</a></li>
                 <li><a href="#contact">যোগাযোগ</a></li>
             </ul>
         </nav>
+        <button id="themeToggle">ডার্ক মোড</button>
     </header>
 
     <!-- হিরো সেকশন -->
@@ -41,7 +59,7 @@
     <!-- রক্তদাতা খুঁজুন -->
     <section id="donors" class="donors">
         <h2>রক্তদাতা খুঁজুন</h2>
-        <form id="searchForm" action="https://formspree.io/f/xkgjwlbl" method="POST">
+        <form id="searchForm" action="https://formspree.io/f/your-form-id" method="POST">
             <label for="bloodType">রক্তের গ্রুপ:</label>
             <select id="bloodType" name="bloodType" required>
                 <option value="A+">A+</option>
@@ -66,7 +84,7 @@
     <!-- রক্তের আবেদন -->
     <section id="request" class="request">
         <h2>রক্তের আবেদন</h2>
-        <form id="requestForm" action="https://formspree.io/f/xkgjwlbl" method="POST">
+        <form id="requestForm" action="https://formspree.io/f/your-form-id" method="POST">
             <label for="patientName">রোগীর নাম:</label>
             <input type="text" id="patientName" name="patientName" required>
 
@@ -96,18 +114,96 @@
         </form>
     </section>
 
+    <!-- ডোনার প্রোফাইল -->
+    <section id="donor-profiles" class="donor-profiles">
+        <h2>ডোনার প্রোফাইল</h2>
+        <div class="profile-list">
+            <div class="profile">
+                <img src="images/donor1.jpg" alt="ডোনার ১">
+                <h3>ডোনার ১</h3>
+                <p>রক্তের গ্রুপ: A+</p>
+                <p>লোকেশন: ঢাকা</p>
+            </div>
+            <div class="profile">
+                <img src="images/donor2.jpg" alt="ডোনার ২">
+                <h3>ডোনার ২</h3>
+                <p>রক্তের গ্রুপ: B-</p>
+                <p>লোকেশন: চট্টগ্রাম</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ইভেন্ট ক্যালেন্ডার -->
+    <section id="events" class="events">
+        <h2>ইভেন্ট ক্যালেন্ডার</h2>
+        <div class="calendar">
+            <div class="event">
+                <h3>রক্তদান শিবির</h3>
+                <p>তারিখ: ২৫ মার্চ, ২০২৫</p>
+                <p>লোকেশন: সালুয়া ইউনিয়ন কমিউনিটি সেন্টার</p>
+            </div>
+            <div class="event">
+                <h3>স্বাস্থ্য ক্যাম্প</h3>
+                <p>তারিখ: ১০ এপ্রিল, ২০২৫</p>
+                <p>লোকেশন: সালুয়া ইউনিয়ন স্কুল</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ব্লগ -->
+    <section id="blog" class="blog">
+        <h2>ব্লগ</h2>
+        <div class="blog-posts">
+            <div class="post">
+                <h3>রক্তদানের উপকারিতা</h3>
+                <p>রক্তদান শুধুমাত্র জীবন বাঁচায় না, এটি আপনার স্বাস্থ্যের জন্যও উপকারী...</p>
+                <a href="#">আরও পড়ুন</a>
+            </div>
+            <div class="post">
+                <h3>রক্তদানের আগে করণীয়</h3>
+                <p>রক্তদানের আগে কিছু বিষয় মাথায় রাখা জরুরি...</p>
+                <a href="#">আরও পড়ুন</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ডোনেশন -->
+    <section id="donation" class="donation">
+        <h2>ডোনেশন</h2>
+        <p>আমাদের কাজে সহায়তা করতে চান? অনুগ্রহ করে ডোনেশন করুন।</p>
+        <a href="https://example.com/donate" class="donate-button">ডোনেশন করুন</a>
+    </section>
+
     <!-- যোগাযোগ -->
     <section id="contact" class="contact">
         <h2>যোগাযোগ</h2>
         <p>ইমেইল: info@saluaunionbloodclub.com</p>
         <p>ফোন: ০১২৩-৪৫৬৭৮৯</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d90.123456!3d23.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA3JzI0LjQiTiA5MMKwMDcnMjQuNiVF!4v1621234567890!5m2!1sen!2sbd" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <!-- ফুটার -->
     <footer>
+        <div class="creator-info">
+            <img src="20250309_161217.jpg" alt="আপনার ছবি" style="height: 50px; border-radius: 50%;">
+            <p>তৈরি করেছেন: [রাব্বি]</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
         <p>&copy; ২০২৩ সালুয়া ইউনিয়ন ব্লাড ডোনার্স ক্লাব</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- ডার্ক মোড স্ক্রিপ্ট -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
